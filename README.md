@@ -6,20 +6,32 @@ PC
 Anaconda - Python 3.7
 ## ALGORITHM: 
 ### Step 1:
+ Create a python file with .py and text file .txt
+### Step 2:
+ In python file import sys
+### Step 3:
+ Assign a variable count =0 and open a file in read mode
+### Step 4:
+ iterate a variable(lines) through the file
+### Step 5:
+ Assign a variable words = lines.split()
+### Step 6:
+ Now iterate through the variable and increase the count: and print the count value
 
-### Step 2: 
- 
-### Step 3: 
-
-### Step 4:  
-
-### Step 5: 
-
-### Step 6: 
-
-## PROGRAM:
+### PROGRAM:
+#name:vishwa rathinam S
+#ref no:212221240063
+import sys
+count=0
+with open(sys.argv[1],'r') as f:
+    for line in f:
+        word = line.split()
+        count += len(word)
+print("Word Count in File = ",count)
 
 ### OUTPUT:
+![git log](sss1.jpeg)
+![get log](sss2.jpeg)
 
 
 
